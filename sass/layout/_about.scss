@@ -1,0 +1,36 @@
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.about-list {
+  display: flex;
+}
+.about-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.about-list__icon {
+  display: flex;
+  background: #f5f4fa;
+  border-radius: 4px;
+  align-items: center;
+  padding: 25px 100px 25px 100px;
+  margin-bottom: 30px;
+}
+.about-list__titil {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--about-title-coior);
+}
+.about-list__slogan {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}

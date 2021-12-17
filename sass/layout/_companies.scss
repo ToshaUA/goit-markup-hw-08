@@ -1,0 +1,36 @@
+.companies {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.companies-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.companies-list__item {
+  width: 170px;
+  height: 92px;
+  & + .companies-list__item {
+    margin-left: 30px;
+  }
+}
+
+.companies-list__link {
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .companies-list__item:hover &,
+  .companies-list__item:focus & {
+    fill: var(--accent-color);
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
