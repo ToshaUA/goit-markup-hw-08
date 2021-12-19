@@ -61,9 +61,8 @@
   }
 }
 .subscribe__mail {
-  width: 450px;
+  width: 290px;
   height: 50px;
-
   margin-bottom: 20px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -86,6 +85,9 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
   @media screen and (min-width: 768px) {
     width: 450px;

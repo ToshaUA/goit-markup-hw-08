@@ -1,6 +1,4 @@
 .companies {
-  // padding-bottom: 94px;
-  // padding-top: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
@@ -9,48 +7,26 @@
   }
 }
 .companies-list {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: -30px;
     margin-bottom: -30px;
   }
 }
 .companies-list__item {
-  // width: 100%;
+  width: 100%;
   height: 92px;
-  // & + .companies-list__item {
-  //   margin-left: 30px;
-  // }
+  margin-bottom: 30px;
   @media screen and (min-width: 480px) {
     flex-basis: 210px;
     margin-left: 30px;
-    margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
     flex-basis: 226px;
-    margin-left: 30px;
-    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: 170px;
-    margin-left: 30px;
-    margin-bottom: 30px;
   }
 }
 
