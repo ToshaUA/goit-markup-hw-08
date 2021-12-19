@@ -4,12 +4,25 @@
   background-color: #2f303a;
 }
 .address {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    align-items: baseline;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 .address__text {
   font-weight: 400;
   font-style: normal;
   padding-top: 20px;
+  padding-right: 6px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -17,9 +30,9 @@
   color: var(--address-color);
 }
 .contacts-list__item {
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contacts-list__link {
   font-style: normal;
@@ -35,15 +48,23 @@
   }
 }
 .subscribe {
-  padding-left: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
 }
 .subscribe__blok {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 .subscribe__mail {
-  width: 358px;
+  width: 450px;
   height: 50px;
-  margin-right: 12px;
+
+  margin-bottom: 20px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -65,5 +86,38 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    margin-left: 0px;
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+.list-firm {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    align-items: baseline;
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer--address-box {
+    display: flex;
+    align-items: baseline;
   }
 }
