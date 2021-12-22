@@ -1,5 +1,8 @@
 .developers {
   background: #f5f4fa;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
@@ -21,6 +24,8 @@
   }
 }
 .developers-list__item {
+  margin-left: auto;
+  margin-right: auto;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -55,6 +60,6 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.developers-list__icon {
-  width: 100%;
-}
+// .developers-list__icon {
+//   width: 100%;
+// }
