@@ -87,9 +87,11 @@
   color: #757575;
 }
 .mobile-menu-social {
-  display: inline-flex;
+  display: inline;
 }
 .mobile-social-list__item {
+  display: inline;
+  align-items: flex-end;
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -112,4 +114,6 @@
   top: 726px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+}
+.mobile-menu-bottom {
 }

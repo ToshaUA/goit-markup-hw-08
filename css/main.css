@@ -1693,9 +1693,14 @@ body {
 }
 
 .mobile-menu-social {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline;
+}
+
+.mobile-social-list__item {
+  display: inline;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .mobile-social-list__item:not(:last-child) {
