@@ -3,42 +3,56 @@
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.address {
+.address-container {
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    margin-left: 76px;
-  }
+  justify-content: center;
   @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-    align-items: baseline;
-    margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    margin-right: 76px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.logo-container {
+  margin-bottom: 20px;
+}
+.address {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 .address__text {
   font-weight: 400;
   font-style: normal;
-  padding-top: 20px;
-  padding-right: 6px;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   margin-bottom: 9px;
+  letter-spacing: 0.03em;
   color: var(--address-color);
 }
 .contacts-list__item {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 .contacts-list__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--footer-address-color);
@@ -47,6 +61,19 @@
     color: var(--accent-color);
   }
 }
+.footer-address-box {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-bottom: 0px;
+  }
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -102,24 +129,12 @@
 }
 
 .list-firm {
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    margin-left: 165px;
-  }
+
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-    align-items: baseline;
-    margin-left: 0px;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer--address-box {
-    display: flex;
     align-items: baseline;
   }
 }

@@ -11,7 +11,6 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: center;
     margin-bottom: 30px;
   }
@@ -26,8 +25,15 @@
   &:nth-child(-n + 3) {
     margin-bottom: 10px;
   }
+  &:nth-child(3) {
+    margin-right: 0px;
+  }
+
   @media screen and (min-width: 768px) {
-    &:nth-child(-n + 3) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:nth-child(n) {
       margin-bottom: 0px;
     }
   }

@@ -1,24 +1,31 @@
 .product-list {
-  margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: -30px;
   }
 }
 .product-list__item {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: 354px;
-    margin-left: 30px;
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
   }
   @media screen and (min-width: 1200px) {
     flex-basis: 370px;
-    margin-left: 30px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+    &:nth-child(3n + 1) {
+      margin-left: 0px;
+    }
   }
 }
 .product-list__filtr {
